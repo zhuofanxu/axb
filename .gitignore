@@ -1,0 +1,10 @@
+# idea
+.idea
+*.iml
+.DS_Store
+**/.DS_Store
+build
+logs
+#vscode
+.vscode
+.vscode/
