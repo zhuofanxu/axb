@@ -1,4 +1,4 @@
-package encryptutils
+package crypto
 
 import (
 	"testing"

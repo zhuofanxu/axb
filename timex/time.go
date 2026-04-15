@@ -1,4 +1,4 @@
-package timeutils
+package timex
 
 import (
 	"time"
@@ -10,6 +10,7 @@ const (
 	TimeTemplateThree = "2006-01-02"
 	TimeTemplateFour  = "15:04:05"
 	TimeTemplateFive  = "2006-01-02 15:04:05.000"
+	TimeTemplateSix   = "20060102150405"
 	DaySeconds        = 86400
 )
 

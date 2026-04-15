@@ -1,6 +1,7 @@
-package stringutils
+package stringx
 
 import (
+	"strconv"
 	"strings"
 	"unsafe"
 )
@@ -49,4 +50,17 @@ func ConcatWithPlus(strs ...string) string {
 		s += str
 	}
 	return s
+}
+
+func ParseHexToUint64(s string) (uint, error) {
+	v := strings.TrimSpace(s)
+	if strings.HasPrefix(v, "0x") || strings.HasPrefix(v, "0X") {
+		v = v[2:]
+	}
+	// 空字符串或非十六进制将报错
+	u64, err := strconv.ParseUint(v, 16, 64)
+	if err != nil {
+		return 0, err
+	}
+	return uint(u64), nil
 }
