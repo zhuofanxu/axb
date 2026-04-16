@@ -3,11 +3,11 @@ package middleware
 import (
 	"strings"
 
+	"github.com/gin-gonic/gin"
+
 	"github.com/zhuofanxu/axb/auth/jwt"
 	"github.com/zhuofanxu/axb/errx"
 	"github.com/zhuofanxu/axb/http/response"
-
-	"github.com/gin-gonic/gin"
 )
 
 //goland:noinspection GoUnusedExportedFunction

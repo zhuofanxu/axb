@@ -4,9 +4,9 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/zhuofanxu/axb/errx"
-
 	"github.com/gin-gonic/gin"
+
+	"github.com/zhuofanxu/axb/errx"
 )
 
 // Response response is the standard 'response' structure for API responses.

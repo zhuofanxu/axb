@@ -27,9 +27,9 @@ type CustomClaims struct {
 }
 
 type JWT struct {
-	SigningKey   string        // 签名密钥
-	ExpiresTime  time.Duration // 过期时长，传入标准 time.Duration，如 2*time.Hour、30*time.Minute
-	Issuer       string        // 签发人
+	SigningKey  string        // 签名密钥
+	ExpiresTime time.Duration // 过期时长，传入标准 time.Duration，如 2*time.Hour、30*time.Minute
+	Issuer      string        // 签发人
 }
 
 var (
