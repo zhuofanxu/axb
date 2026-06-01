@@ -8,6 +8,6 @@ type PaginationResponse[T any] struct {
 }
 
 type PaginationParam struct {
-	Page     int `json:"pageIndex" binding:"omitempty,min=0"`
-	PageSize int `json:"pageSize" binding:"omitempty,min=1,max=1000"`
+	Page     int `json:"pageIndex" form:"pageIndex" binding:"omitempty,min=0"`
+	PageSize int `json:"pageSize"  form:"pageSize"  binding:"omitempty,min=1,max=1000"`
 }
